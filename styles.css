@@ -25,6 +25,16 @@ body {
   animation: glow 2s infinite alternate;
 }
 
+/* Profile Image */
+.jp-profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ced02d; /* JP yellow border */
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
 /* Glow animation */
 @keyframes glow {
   0% { box-shadow: 0 0 20px #8b0000; border-color: #8b0000; }
@@ -107,6 +117,7 @@ body {
 /* Mobile */
 @media (max-width: 500px) {
   .jp-container { padding: 20px; }
+  .jp-profile { width: 90px; height: 90px; margin-bottom: 10px; }
   .jp-title { font-size: 1.8em; }
   .jp-link { font-size: 1em; padding: 12px; }
 }
